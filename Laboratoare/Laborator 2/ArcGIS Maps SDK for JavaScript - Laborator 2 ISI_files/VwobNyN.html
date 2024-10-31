@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://cdpn.io/Alexandra-Claudia-G-rni/fullpage/VwobNyN?nocache=true&view= -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+    <script type="text/javascript" charset="utf-8" src="./MapView.js.download"></script><script type="text/javascript" charset="utf-8" src="./Locate.js.download"></script><script type="text/javascript" charset="utf-8" src="./Track.js.download"></script><script type="text/javascript" charset="utf-8" src="./GraphicsLayer.js.download"></script><script type="text/javascript" charset="utf-8" src="./GeoJSONLayer.js.download"></script><script type="text/javascript" charset="utf-8" src="./LocateViewModel.js.download"></script><script type="text/javascript" charset="utf-8" src="./TrackViewModel.js.download"></script><script type="text/javascript" charset="utf-8" src="./actions.js.download"></script><script type="text/javascript" charset="utf-8" src="./GeolocationPositioning.js.download"></script><script type="text/javascript" charset="utf-8" src="./geolocationUtils.js.download"></script><script type="text/javascript" charset="utf-8" src="./legacyIcon.js.download"></script><script type="text/javascript" charset="utf-8" src="./project.js.download"></script><script type="text/javascript" charset="utf-8" src="./ProjectParameters.js.download"></script><script type="text/javascript" charset="utf-8" src="./calcite-button.js.download"></script><script type="text/javascript" charset="utf-8" src="./webglDeps.js.download"></script><script type="text/javascript" charset="utf-8" src="./mapViewDeps.js.download"></script><script type="text/javascript" charset="utf-8" src="./calcite-loader.js.download"></script><script type="text/javascript" charset="utf-8" src="./calcite-tooltip.js.download"></script><script type="text/javascript" charset="utf-8" src="./button.js.download"></script><script type="text/javascript" charset="utf-8" src="./FeatureLayerView2D.js.download"></script><script type="text/javascript" charset="utf-8" src="./GraphicsLayerView2D.js.download"></script><script type="text/javascript" charset="utf-8" src="./loader.js.download"></script><script type="text/javascript" charset="utf-8" src="./dom.js.download"></script><script type="text/javascript" charset="utf-8" src="./floating-ui.js.download"></script><script type="text/javascript" charset="utf-8" src="./guid.js.download"></script><script type="text/javascript" charset="utf-8" src="./openCloseComponent.js.download"></script><script type="text/javascript" charset="utf-8" src="./FloatingArrow.js.download"></script><script type="text/javascript" charset="utf-8" src="./form.js.download"></script><script type="text/javascript" charset="utf-8" src="./interactive.js.download"></script><script type="text/javascript" charset="utf-8" src="./label2.js.download"></script><script type="text/javascript" charset="utf-8" src="./loadable.js.download"></script><script type="text/javascript" charset="utf-8" src="./locale.js.download"></script><script type="text/javascript" charset="utf-8" src="./observers.js.download"></script><script type="text/javascript" charset="utf-8" src="./component.js.download"></script><script type="text/javascript" charset="utf-8" src="./t9n.js.download"></script><script type="text/javascript" charset="utf-8" src="./icon.js.download"></script><script type="text/javascript" charset="utf-8" src="./debounce.js.download"></script><script type="text/javascript" charset="utf-8" src="./key.js.download"></script><script type="text/javascript" charset="utf-8" src="./TileLayer.js.download"></script><script type="text/javascript" charset="utf-8" src="./VectorTileLayer.js.download"></script><script type="text/javascript" charset="utf-8" src="./TileLayerView2D.js.download"></script><script type="text/javascript" charset="utf-8" src="./VectorTileLayerView2D.js.download"></script><script type="text/javascript" charset="utf-8" src="./arcadeUtils.js.download"></script><script type="text/javascript" charset="utf-8" src="./libtess.js.download"></script><script type="text/javascript" charset="utf-8" src="./apng.js.download"></script><script type="text/javascript" charset="utf-8" src="./Popup.js.download"></script><script src="./stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js.download"></script>
+
+
+  <title>CodePen - ArcGIS Maps SDK for JavaScript - Laborator 2 ISI</title>
+
+    <link rel="canonical" href="https://codepen.io/Alexandra-Claudia-G-rni/pen/VwobNyN">
+  
+  
+  
+  
+<style>
+html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+  <!--
+
+To run this demo, you need to replace 'YOUR_ACCESS_TOKEN' with an access token from ArcGIS that has the correct privileges.
+
+To get started, sign up for a free ArcGIS Location Platform account or a free trial of ArcGIS Online and create developer credentials.
+
+https://developers.arcgis.com/documentation/security-and-authentication/get-started/
+
+-->
+
+
+  
+    
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ArcGIS Maps SDK for JavaScript Tutorials: Display a map</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <script src="./saved_resource"></script>
+
+  
+  
+    <div id="viewDiv" class="esri-view esri-view-width-medium esri-view-width-greater-than-xsmall esri-view-width-greater-than-small esri-view-width-less-than-large esri-view-width-less-than-xlarge esri-view-height-xsmall esri-view-height-less-than-small esri-view-height-less-than-medium esri-view-height-less-than-large esri-view-height-less-than-xlarge esri-view-orientation-landscape"><div class="esri-view-root"><div class="esri-view-surface esri-view-surface--touch-none" role="application" tabindex="0" data-navigating="false"><canvas style="width: 914px; height: 492px; display: block;" width="1828" height="984"></canvas></div><div class="esri-overlay-surface"><div style="visibility: hidden;"></div></div><div class="esri-ui calcite-mode-light" lang="en-RO" style="inset: 0px;"><div class="esri-ui-inner-container esri-ui-corner-container" style="inset: 15px 15px 30px;"><div class="esri-ui-top-left esri-ui-corner"><div class="esri-component esri-zoom esri-widget"><calcite-button class="esri-widget--button" title="Zoom in" alignment="center" appearance="solid" kind="neutral" icon-start="plus" scale="m" type="button" width="auto"><template shadowrootmode="open"><div class="interaction-container"><button aria-label="Zoom in" aria-live="polite" class="button-padding--shrunk icon-end-empty" type="button"><calcite-icon class="icon icon--start" aria-hidden="true" icon="plus" scale="s"><template shadowrootmode="open"><svg aria-hidden="true" class="svg" fill="currentColor" height="100%" viewBox="0 0 16 16" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="M9 4v4h4v1H9v4H8V9H4V8h4V4z"></path></svg></template></calcite-icon></button></div></template></calcite-button><calcite-button class="esri-widget--button" title="Zoom out" alignment="center" appearance="solid" kind="neutral" icon-start="minus" scale="m" type="button" width="auto"><template shadowrootmode="open"><div class="interaction-container"><button aria-label="Zoom out" aria-live="polite" class="button-padding--shrunk icon-end-empty" type="button"><calcite-icon class="icon icon--start" aria-hidden="true" icon="minus" scale="s"><template shadowrootmode="open"><svg aria-hidden="true" class="svg" fill="currentColor" height="100%" viewBox="0 0 16 16" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="M13 8v1H3V8z"></path></svg></template></calcite-icon></button></div></template></calcite-button></div><div class="esri-component esri-locate esri-widget"><calcite-button class="esri-widget--button" title="Find my location" alignment="center" appearance="solid" kind="neutral" icon-start="gps-off" scale="m" type="button" width="auto"><template shadowrootmode="open"><div class="interaction-container"><button aria-label="Find my location" aria-live="polite" class="button-padding--shrunk icon-end-empty" type="button"><calcite-icon class="icon icon--start" aria-hidden="true" icon="gps-off" scale="s"><template shadowrootmode="open"><svg aria-hidden="true" class="svg" fill="currentColor" height="100%" viewBox="0 0 16 16" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="M15.98 8h-2.25a5.265 5.265 0 0 0-4.75-4.75V1h-1v2.25A5.265 5.265 0 0 0 3.23 8H.98v1h2.25a5.265 5.265 0 0 0 4.75 4.75V16h1v-2.25A5.265 5.265 0 0 0 13.73 9h2.25zm-7.5 4.8a4.3 4.3 0 1 1 4.3-4.3 4.304 4.304 0 0 1-4.3 4.3z"></path></svg></template></calcite-icon></button></div></template></calcite-button></div><div class="esri-component esri-track esri-widget"><calcite-button class="esri-widget--button" title="Start tracking my location" alignment="center" appearance="solid" kind="neutral" icon-start="compass-north-circle" scale="m" type="button" width="auto"><template shadowrootmode="open"><div class="interaction-container"><button aria-label="Start tracking my location" aria-live="polite" class="button-padding--shrunk icon-end-empty" type="button"><calcite-icon class="icon icon--start" aria-hidden="true" icon="compass-north-circle" scale="s"><template shadowrootmode="open"><svg aria-hidden="true" class="svg" fill="currentColor" height="100%" viewBox="0 0 16 16" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="M8 2.5l-4 9 4-2 4 2zm0 6a1 1 0 0 0-.447.105l-1.507.754L8 4.962l1.954 4.397-1.507-.754A1 1 0 0 0 8 8.5zM8 .2A7.8 7.8 0 1 0 15.8 8 7.809 7.809 0 0 0 8 .2zm0 14.6A6.8 6.8 0 1 1 14.8 8 6.808 6.808 0 0 1 8 14.8z"></path></svg></template></calcite-icon></button></div></template></calcite-button></div></div><div class="esri-ui-top-right esri-ui-corner"></div><div class="esri-ui-bottom-left esri-ui-corner"></div><div class="esri-ui-bottom-right esri-ui-corner"></div></div><div class="esri-ui-inner-container esri-ui-manual-container"><div class="esri-component esri-attribution esri-widget" dir="ltr"><div class="esri-attribution__sources esri-interactive" tabindex="0">Esri, NASA, NGA, USGS | County of Los Angeles, California State Parks, Esri, TomTom, Garmin, SafeGraph, GeoTechnologies, Inc, METI/NASA, USGS, Bureau of Land Management, EPA, NPS, USDA, USFWS</div><div class="esri-attribution__powered-by">Powered by <a class="esri-attribution__link" href="https://www.esri.com/" rel="noreferrer" target="_blank">Esri</a></div></div></div></div></div><div class="esri-view-user-storage"></div></div>
+  
+
+  
+      <script id="rendered-js">
+require([
+"esri/config",
+"esri/Map",
+"esri/views/MapView",
+"esri/widgets/Locate",
+
+"esri/widgets/Track",
+"esri/Graphic",
+"esri/layers/GraphicsLayer",
+"esri/layers/FeatureLayer",
+"esri/layers/GeoJSONLayer"],
+function (
+esriConfig,
+Map,
+MapView,
+Locate,
+
+Track,
+Graphic,
+GraphicsLayer,
+FeatureLayer,
+GeoJSONLayer)
+{
+  esriConfig.apiKey =
+  "AAPTxy8BH1VEsoebNVZXo8HurNNdtZiU82xWUzYLPb7EktsQl_JcOdzgsJtZDephAvIhplMB4PQTWSaU4tGgQhsL4u6bAO6Hp_pE8hzL0Ko7jbY9o98fU61l_j7VXlLRDf08Y0PheuGHZtJdT4bJcAKLrP5dqPCFsZesVv-S7BH1OaZnV-_IsKRdxJdxZI3RVw7XGZ0xvERxTi57udW9oIg3VzF-oY1Oy4ybqDshlMgejQI.AT1_a5lV7G2k";
+
+  const url =
+  "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson";
+
+  const template = {
+    title: "Earthquake Info",
+    content: "Magnitude {mag} {type} hit {place} on {time}",
+    fieldInfos: [
+    {
+      fieldName: "time",
+      format: {
+        dateFormat: "short-date-short-time" } }] };
+
+
+
+
+
+  const renderer = {
+    type: "simple",
+    field: "mag",
+    symbol: {
+      type: "simple-marker",
+      color: "orange",
+      outline: {
+        color: "white" } },
+
+
+    visualVariables: [
+    {
+      type: "size",
+      field: "mag",
+      stops: [
+      {
+        value: 2.5,
+        size: "4px" },
+
+      {
+        value: 8,
+        size: "40px" }] }] };
+
+
+
+
+
+
+  const geojsonLayer = new GeoJSONLayer({
+    url: url,
+    copyright: "USGS Earthquakes",
+    popupTemplate: template,
+    renderer: renderer,
+    orderBy: {
+      field: "mag" } });
+
+
+
+  const map = new Map({
+    basemap: "arcgis/topographic" // basemap styles service
+    //basemap: "arcgis/navigation",
+    //basemap: "gray-vector",
+    //layers: [geojsonLayer]
+  });
+
+  const view = new MapView({
+    map: map,
+    center: [-118.805, 34.027], // Longitude, latitude
+    zoom: 13, // Zoom level
+    container: "viewDiv" // Div element
+  });
+
+  const graphicsLayer = new GraphicsLayer();
+  map.add(graphicsLayer);
+
+  const point = {
+    //Create a point
+    type: "point",
+    longitude: -118.80657463861,
+    latitude: 34.0005930608889 };
+
+
+  const simpleMarkerSymbol = {
+    type: "simple-marker",
+    color: [226, 119, 40], // Orange
+    outline: {
+      color: [255, 255, 255], // White
+      width: 1 } };
+
+
+  const pointGraphic = new Graphic({
+    geometry: point,
+    symbol: simpleMarkerSymbol });
+
+  graphicsLayer.add(pointGraphic);
+
+  // Create a line geometry
+  const polyline = {
+    type: "polyline",
+    paths: [
+    [-118.821527826096, 34.0139576938577], //Longitude, latitude
+    [-118.814893761649, 34.0080602407843], //Longitude, latitude
+    [-118.808878330345, 34.0016642996246] //Longitude, latitude
+    ] };
+
+  const simpleLineSymbol = {
+    type: "simple-line",
+    color: [226, 119, 40], // Orange
+    width: 2 };
+
+
+  const polylineGraphic = new Graphic({
+    geometry: polyline,
+    symbol: simpleLineSymbol });
+
+  graphicsLayer.add(polylineGraphic);
+
+  // Create a polygon geometry
+  const polygon = {
+    type: "polygon",
+    rings: [
+    [-118.818984489994, 34.0137559967283], //Longitude, latitude
+    [-118.806796597377, 34.0215816298725], //Longitude, latitude
+    [-118.791432890735, 34.0163883241613], //Longitude, latitude
+    [-118.79596686535, 34.008564864635], //Longitude, latitude
+    [-118.808558110679, 34.0035027131376] //Longitude, latitude
+    ] };
+
+
+  const simpleFillSymbol = {
+    type: "simple-fill",
+    color: [227, 139, 79, 0.8], // Orange, opacity 80%
+    outline: {
+      color: [255, 255, 255],
+      width: 1 } };
+
+
+
+  const popupTemplate = {
+    title: "{Name}",
+    content: "{Description}" };
+
+  const attributes = {
+    Name: "Graphic",
+    Description: "I am a polygon" };
+
+
+  const polygonGraphic = new Graphic({
+    geometry: polygon,
+    symbol: simpleFillSymbol,
+
+    attributes: attributes,
+    popupTemplate: popupTemplate });
+
+  graphicsLayer.add(polygonGraphic);
+
+  const locate = new Locate({
+    view: view,
+    useHeadingEnabled: false,
+    goToOverride: function (view, options) {
+      options.target.scale = 1500;
+      return view.goTo(options.target);
+    } });
+
+  view.ui.add(locate, "top-left");
+
+  const track = new Track({
+    view: view,
+    graphic: new Graphic({
+      symbol: {
+        type: "simple-marker",
+        size: "12px",
+        color: "green",
+        outline: {
+          color: "#efefef",
+          width: "1.5px" } } }),
+
+
+
+    useHeadingEnabled: false });
+
+  view.ui.add(track, "top-left");
+
+  //Trailheads feature layer (points)
+  const trailheadsLayer = new FeatureLayer({
+    url:
+    "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trailheads/FeatureServer/0" });
+
+
+  map.add(trailheadsLayer);
+
+  //Trails feature layer (lines)
+  const trailsLayer = new FeatureLayer({
+    url:
+    "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trails/FeatureServer/0" });
+
+
+  map.add(trailsLayer, 0);
+
+  // Parks and open spaces (polygons)
+  const parksLayer = new FeatureLayer({
+    url:
+    "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Parks_and_Open_Space/FeatureServer/0" });
+
+
+  map.add(parksLayer, 0);
+
+  const trailheadsRenderer = {
+    type: "simple",
+    symbol: {
+      type: "picture-marker",
+      url:
+      "http://static.arcgis.com/images/Symbols/NPS/npsPictograph_0231b.png",
+      width: "18px",
+      height: "18px" } };
+
+
+
+  const trailheadsLabels = {
+    symbol: {
+      type: "text",
+      color: "#FFFFFF",
+      haloColor: "#5E8D74",
+      haloSize: "2px",
+      font: {
+        size: "12px",
+        family: "Noto Sans",
+        style: "italic",
+        weight: "normal" } },
+
+
+
+    labelPlacement: "above-center",
+    labelExpressionInfo: {
+      expression: "$feature.TRL_NAME" } };
+
+
+
+  // Create the layer and set the renderer
+  const trailheads = new FeatureLayer({
+    url:
+    "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trailheads/FeatureServer/0",
+    renderer: trailheadsRenderer,
+    labelingInfo: [trailheadsLabels] });
+
+
+  map.add(trailheads);
+
+  // Define a unique value renderer and symbols
+  const trailsRenderer = {
+    type: "simple",
+    symbol: {
+      color: "#BA55D3",
+      type: "simple-line",
+      style: "solid" },
+
+
+    visualVariables: [
+    {
+      type: "size",
+      field: "ELEV_GAIN",
+      minDataValue: 0,
+      maxDataValue: 2300,
+      minSize: "3px",
+      maxSize: "7px" }] };
+
+
+
+
+  // Create the layer and set the renderer
+  const trails = new FeatureLayer({
+    url:
+    "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trails/FeatureServer/0",
+    renderer: trailsRenderer,
+    opacity: 0.75 });
+
+
+  // Add the layer
+  map.add(trails, 0);
+
+  // Add bikes only trails
+  const bikeTrailsRenderer = {
+    type: "simple",
+    symbol: {
+      type: "simple-line",
+      style: "short-dot",
+      color: "#FF91FF",
+      width: "1px" } };
+
+
+
+  const bikeTrails = new FeatureLayer({
+    url:
+    "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trails/FeatureServer/0",
+    renderer: bikeTrailsRenderer,
+    definitionExpression: "USE_BIKE = 'YES'" });
+
+
+  map.add(bikeTrails, 1);
+
+  // Add parks with a class breaks renderer and unique symbols
+  function createFillSymbol(value, color) {
+    return {
+      value: value,
+      symbol: {
+        color: color,
+        type: "simple-fill",
+        style: "solid",
+        outline: {
+          style: "none" } },
+
+
+      label: value };
+
+  }
+
+  const openSpacesRenderer = {
+    type: "unique-value",
+    field: "TYPE",
+    uniqueValueInfos: [
+    createFillSymbol("Natural Areas", "#9E559C"),
+    createFillSymbol("Regional Open Space", "#A7C636"),
+    createFillSymbol("Local Park", "#149ECE"),
+    createFillSymbol("Regional Recreation Park", "#ED5151")] };
+
+
+
+  // Create the layer and set the renderer
+  const openspaces = new FeatureLayer({
+    url:
+    "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Parks_and_Open_Space/FeatureServer/0",
+    renderer: openSpacesRenderer,
+    opacity: 0.2 });
+
+
+  // Add the layer
+  map.add(openspaces, 0);
+
+  // Define a pop-up for Trailheads
+  const popupTrailheads = {
+    title: "Trailhead",
+    content:
+    "<b>Trail:</b> {TRL_NAME}<br><b>City:</b> {CITY_JUR}<br><b>Cross Street:</b> {X_STREET}<br><b>Parking:</b> {PARKING}<br><b>Elevation:</b> {ELEV_FT} ft" };
+
+
+  // Define a popup for Trails
+  const popupTrails = {
+    title: "Trail Information",
+    content: [
+    {
+      type: "media",
+      mediaInfos: [
+      {
+        type: "column-chart",
+        caption: "",
+        value: {
+          fields: ["ELEV_MIN", "ELEV_MAX"],
+          normalizeField: null,
+          tooltipField: "Min and max elevation values" } }] }] };
+
+
+
+
+
+
+
+  // Define popup for Parks and Open Spaces
+  const popupOpenspaces = {
+    title: "{PARK_NAME}",
+    content: [
+    {
+      type: "fields",
+      fieldInfos: [
+      {
+        fieldName: "AGNCY_NAME",
+        label: "Agency",
+        isEditable: true,
+        tooltip: "",
+        visible: true,
+        format: null,
+        stringFieldOption: "text-box" },
+
+      {
+        fieldName: "TYPE",
+        label: "Type",
+        isEditable: true,
+        tooltip: "",
+        visible: true,
+        format: null,
+        stringFieldOption: "text-box" },
+
+      {
+        fieldName: "ACCESS_TYP",
+        label: "Access",
+        isEditable: true,
+        tooltip: "",
+        visible: true,
+        format: null,
+        stringFieldOption: "text-box" },
+
+
+      {
+        fieldName: "GIS_ACRES",
+        label: "Acres",
+        isEditable: true,
+        tooltip: "",
+        visible: true,
+        format: {
+          places: 2,
+          digitSeparator: true },
+
+
+        stringFieldOption: "text-box" }] }] };
+
+
+
+
+
+
+  map.add(openspaces, 0);
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+
+
+
+</body></html>

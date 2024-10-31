@@ -1,0 +1,146 @@
+﻿OBJECTID,Common,Scientific,Family,Genus,Species,Condition,Crown Height,Edible,longitude,latitude
+1,"maple, red",Acer rubrum,Sapindaceae,Acer,ACRU,Good,67,no,-122.6746071,45.51976461
+2,"maple, red",Acer rubrum,Sapindaceae,Acer,ACRU,Good,40,no,-122.6745089,45.51997561
+3,Western redcedar,Thuja plicata,Cupressaceae,Thuja,THPL,Good,38,no,-122.6732601,45.51846658
+4,Western redcedar,Thuja plicata,Cupressaceae,Thuja,THPL,Good,50,no,-122.673274,45.51842695
+5,Western redcedar,Thuja plicata,Cupressaceae,Thuja,THPL,Good,54,no,-122.6733133,45.51847553
+6,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,13,no,-122.6728258,45.51776407
+7,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,16,no,-122.672642,45.51783539
+8,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,15,no,-122.6740486,45.51506031
+9,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,60,no,-122.6739755,45.51519242
+10,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,32,no,-122.6739221,45.51529226
+11,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,61,no,-122.6738874,45.51535865
+12,elm,Ulmus spp.,Ulmaceae,Ulmuys,UL,Good,36,no,-122.6807534,45.51532369
+13,"maple, red",Acer rubrum,Sapindaceae,Acer,ACRU,Good,22,no,-122.6741841,45.51477343
+14,"maple, red",Acer rubrum,Sapindaceae,Acer,ACRU,Good,44,no,-122.6742142,45.5147142
+15,"maple, Norway",Acer platanoides,Sapindaceae,Acer,ACPL,Good,46,no,-122.677797,45.52303926
+16,"maple, Norway",Acer platanoides,Sapindaceae,Acer,ACPL,Good,10,no,-122.6782093,45.52303125
+17,"maple, red",Acer rubrum,Sapindaceae,Acer,ACRU,Good,65,no,-122.6756771,45.51898727
+18,"maple, red",Acer rubrum,Sapindaceae,Acer,ACRU,Good,29,no,-122.6754566,45.51892885
+19,sweetgum,Liquidambar spp.,Altingiaceae,Liquidambar,LIST,Good,22,no,-122.679447,45.51516582
+20,sweetgum,Liquidambar spp.,Altingiaceae,Liquidambar,LIST,Good,11,no,-122.6779403,45.51502157
+21,sweetgum,Liquidambar spp.,Altingiaceae,Liquidambar,LIST,Good,31,no,-122.6780409,45.51504824
+22,sweetgum,Liquidambar spp.,Altingiaceae,Liquidambar,LIST,Good,31,no,-122.6781282,45.5150716
+23,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,61,no,-122.6735166,45.51603258
+24,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,38,no,-122.6735979,45.51588398
+25,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,26,no,-122.6736397,45.51580645
+26,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,39,no,-122.6736969,45.51570844
+27,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,29,no,-122.6737326,45.51563776
+28,"maple, red",Acer rubrum,Sapindaceae,Acer,ACRU,Good,14,no,-122.674646,45.51969846
+29,"maple, red",Acer rubrum,Sapindaceae,Acer,ACRU,Good,37,no,-122.6744465,45.52009925
+30,incense cedar,Calocedrus decurrens,Cupressaceae,Calocedrus,CADE,Good,19,no,-122.673176,45.51873793
+31,incense cedar,Calocedrus decurrens,Cupressaceae,Calocedrus,CADE,Good,57,no,-122.6732004,45.51869426
+32,incense cedar,Calocedrus decurrens,Cupressaceae,Calocedrus,CADE,Good,10,no,-122.673216,45.51865971
+33,incense cedar,Calocedrus decurrens,Cupressaceae,Calocedrus,CADE,Good,47,no,-122.6732382,45.51862895
+34,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,41,no,-122.6717024,45.5193914
+35,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,29,no,-122.6717164,45.51933813
+36,"maple, red",Acer rubrum,Sapindaceae,Acer,ACRU,Good,14,no,-122.6718867,45.51928746
+37,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,18,no,-122.6718601,45.5192072
+38,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,18,no,-122.6718624,45.51911625
+39,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,68,no,-122.6719455,45.5189551
+40,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,26,no,-122.6720557,45.51875427
+41,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,52,no,-122.6720779,45.51870724
+42,incense cedar,Calocedrus decurrens,Cupressaceae,Calocedrus,CADE,Good,50,no,-122.6730943,45.5188992
+43,incense cedar,Calocedrus decurrens,Cupressaceae,Calocedrus,CADE,Good,24,no,-122.6731102,45.51886264
+44,incense cedar,Calocedrus decurrens,Cupressaceae,Calocedrus,CADE,Good,24,no,-122.6731538,45.51878094
+45,"maple, red",Acer rubrum,Sapindaceae,Acer,ACRU,Good,23,no,-122.6759353,45.52134623
+46,elm,Ulmus spp.,Ulmaceae,Ulmuys,UL,Good,50,no,-122.6779629,45.5157361
+47,elm,Ulmus spp.,Ulmaceae,Ulmuys,UL,Good,46,no,-122.6780432,45.51558711
+48,elm,Ulmus spp.,Ulmaceae,Ulmuys,UL,Good,41,no,-122.6781561,45.51537705
+49,"maple, Norway",Acer platanoides,Sapindaceae,Acer,ACPL,Good,61,no,-122.6756279,45.52307305
+50,"maple, Norway",Acer platanoides,Sapindaceae,Acer,ACPL,Good,29,no,-122.6757376,45.52307139
+51,"maple, red",Acer rubrum,Sapindaceae,Acer,ACRU,Good,67,no,-122.6764182,45.51862914
+52,"maple, red",Acer rubrum,Sapindaceae,Acer,ACRU,Good,53,no,-122.6763541,45.51871456
+53,"maple, red",Acer rubrum,Sapindaceae,Acer,ACRU,Good,51,no,-122.6793941,45.51933543
+54,hornbeam,Carpinus spp.,Betulaceae,Carpinus,CA,Good,44,no,-122.6843336,45.52000289
+55,hornbeam,Carpinus spp.,Betulaceae,Carpinus,CA,Good,31,no,-122.6842952,45.52007665
+56,"maple, red",Acer rubrum,Sapindaceae,Acer,ACRU,Good,25,no,-122.6743729,45.51381887
+57,sweetgum,Liquidambar spp.,Altingiaceae,Liquidambar,LIST,Good,23,no,-122.6785414,45.51453922
+58,sweetgum,Liquidambar spp.,Altingiaceae,Liquidambar,LIST,Good,19,no,-122.6785469,45.51466508
+59,sweetgum,Liquidambar spp.,Altingiaceae,Liquidambar,LIST,Good,54,no,-122.6785024,45.51474309
+60,sweetgum,Liquidambar spp.,Altingiaceae,Liquidambar,LIST,Good,29,no,-122.6783924,45.51494809
+61,Western redcedar,Thuja plicata,Cupressaceae,Thuja,THPL,Good,68,no,-122.6707184,45.52539909
+62,Western redcedar,Thuja plicata,Cupressaceae,Thuja,THPL,Good,44,no,-122.6705886,45.52538961
+63,Western redcedar,Thuja plicata,Cupressaceae,Thuja,THPL,Good,69,no,-122.6706547,45.52537733
+64,"maple, red",Acer rubrum,Sapindaceae,Acer,ACRU,Good,12,no,-122.6708355,45.52540244
+65,hackberry,Celtis occidentalis,Cannabaceae,Celtis,CEOC,Good,64,no,-122.670284,45.52342748
+66,"magnolia, deciduous",Magnolia spp.,Magnoliaceae,Magnolia,MG,Good,17,no,-122.6733834,45.52552733
+67,ginkgo,Ginkgo biloba,Ginkgoaceae,Ginkgo,GIBI,Good,40,no,-122.6733917,45.52581619
+68,dawn redwood,Metasequoia glyptostroboides,Taxodiaceae,Metasequoia,MEGL,Good,38,no,-122.6702821,45.52332252
+69,"maple, Norway",Acer platanoides,Sapindaceae,Acer,ACPL,Good,57,no,-122.6739277,45.52873789
+70,"maple, Norway",Acer platanoides,Sapindaceae,Acer,ACPL,Good,41,no,-122.675938,45.53060039
+71,"magnolia, deciduous",Magnolia spp.,Magnoliaceae,Magnolia,MG,Good,16,no,-122.6733779,45.52546443
+72,"magnolia, deciduous",Magnolia spp.,Magnoliaceae,Magnolia,MG,Good,23,no,-122.673384,45.52558169
+73,"magnolia, deciduous",Magnolia spp.,Magnoliaceae,Magnolia,MG,Good,10,no,-122.6733862,45.52568341
+74,"magnolia, deciduous",Magnolia spp.,Magnoliaceae,Magnolia,MG,Good,60,no,-122.6733912,45.52573621
+75,hackberry,Celtis occidentalis,Cannabaceae,Celtis,CEOC,Good,64,no,-122.6702899,45.52350323
+76,birch,Betula spp.,Betulaceae,Betula,BE,Good,57,no,-122.6734152,45.52715175
+77,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,61,no,-122.6702799,45.52400379
+78,"oak, deciduous",Quercus spp.,Fagaceae,Quercus,QU,Good,46,no,-122.6723292,45.52472721
+79,sweetgum,Liquidambar spp.,Altingiaceae,Liquidambar,LIST,Good,39,no,-122.6717069,45.52464535
+80,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,46,no,-122.6704085,45.52259031
+81,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,48,no,-122.6704012,45.52288233
+82,ash,Fraxinus spp.,Oleaceae,Fraxinus,FR,Good,40,no,-122.6704086,45.5227323
+83,sweetgum,Liquidambar spp.,Altingiaceae,Liquidambar,LIST,Good,37,no,-122.671837,45.52464385
+84,sweetgum,Liquidambar spp.,Altingiaceae,Liquidambar,LIST,Good,16,no,-122.6720618,45.52464055
+85,sweetgum,Liquidambar spp.,Altingiaceae,Liquidambar,LIST,Good,14,no,-122.672177,45.52463933
+86,sweetgum,Liquidambar spp.,Altingiaceae,Liquidambar,LIST,Good,57,no,-122.6712177,45.52393629
+87,sweetgum,Liquidambar spp.,Altingiaceae,Liquidambar,LIST,Good,40,no,-122.6709373,45.52394159
+88,ginkgo,Ginkgo biloba,Ginkgoaceae,Ginkgo,GIBI,Good,57,no,-122.6735917,45.52582482
+89,tupelo,Nyssa spp.,Cornaceae,Nyssa,NYSY,Good,28,no,-122.6832998,45.53288733
+90,tupelo,Nyssa spp.,Cornaceae,Nyssa,NYSY,Good,25,no,-122.6832163,45.53289279
+91,zelkova,Zelkova serrata,Ulmaceae,Zelkova,ZESE,Good,40,no,-122.6830944,45.53289085
+92,tupelo,Nyssa spp.,Cornaceae,Nyssa,NYSY,Good,64,no,-122.6777254,45.52315531
+93,"maple, Norway",Acer platanoides,Sapindaceae,Acer,ACPL,Good,67,no,-122.6816345,45.52877887
+94,elm,Ulmus spp.,Ulmaceae,Ulmuys,UL,Good,47,no,-122.678602,45.52455999
+95,elm,Ulmus spp.,Ulmaceae,Ulmuys,UL,Good,53,no,-122.6786068,45.52468518
+96,"oak, deciduous",Quercus spp.,Fagaceae,Quercus,QU,Good,25,no,-122.6786196,45.52503504
+97,"maple, other",Acer spp.,Sapindaceae,Acer,AC,Good,36,no,-122.6786176,45.52494934
+98,elm,Ulmus spp.,Ulmaceae,Ulmuys,UL,Good,60,no,-122.6786288,45.52525803
+99,"oak, deciduous",Quercus spp.,Fagaceae,Quercus,QU,Good,56,no,-122.6786421,45.52560549
+100,"maple, Norway",Acer platanoides,Sapindaceae,Acer,ACPL,Good,26,no,-122.6786419,45.52568838
+101,"oak, deciduous",Quercus spp.,Fagaceae,Quercus,QU,Good,66,no,-122.6786465,45.52577118
+102,elm,Ulmus spp.,Ulmaceae,Ulmuys,UL,Good,43,no,-122.6790517,45.5243014
+103,"oak, deciduous",Quercus spp.,Fagaceae,Quercus,QU,Good,32,no,-122.6791082,45.52576129
+104,"maple, Norway",Acer platanoides,Sapindaceae,Acer,ACPL,Good,60,no,-122.6791057,45.52568203
+105,"oak, deciduous",Quercus spp.,Fagaceae,Quercus,QU,Good,29,no,-122.6791014,45.52557636
+106,"oak, deciduous",Quercus spp.,Fagaceae,Quercus,QU,Good,10,no,-122.6790964,45.52540498
+107,elm,Ulmus spp.,Ulmaceae,Ulmuys,UL,Good,50,no,-122.6790903,45.52530411
+108,elm,Ulmus spp.,Ulmaceae,Ulmuys,UL,Good,52,no,-122.6790791,45.52491296
+109,"maple, other",Acer spp.,Sapindaceae,Acer,AC,Good,65,no,-122.6790686,45.52465879
+110,"maple, Norway",Acer platanoides,Sapindaceae,Acer,ACPL,Good,53,no,-122.6785851,45.52394023
+111,"maple, Norway",Acer platanoides,Sapindaceae,Acer,ACPL,Good,33,no,-122.6822768,45.5288045
+112,"maple, Norway",Acer platanoides,Sapindaceae,Acer,ACPL,Good,45,no,-122.6815822,45.52877697
+113,"maple, Norway",Acer platanoides,Sapindaceae,Acer,ACPL,Good,60,no,-122.6776645,45.5317457
+114,"oak, deciduous",Quercus spp.,Fagaceae,Quercus,QU,Good,25,no,-122.6791164,45.52597556
+115,"maple, other",Acer spp.,Sapindaceae,Acer,AC,Good,15,no,-122.6791211,45.52610497
+116,"oak, deciduous",Quercus spp.,Fagaceae,Quercus,QU,Good,26,no,-122.6786533,45.52599359
+117,zelkova,Zelkova serrata,Ulmaceae,Zelkova,ZESE,Good,60,no,-122.6821932,45.53086706
+118,zelkova,Zelkova serrata,Ulmaceae,Zelkova,ZESE,Good,22,no,-122.6821101,45.53086804
+119,zelkova,Zelkova serrata,Ulmaceae,Zelkova,ZESE,Good,55,no,-122.6816846,45.53087619
+120,,,,,,,65,,-122.680118,45.52656632
+121,,,,,,,38,,-122.6811727,45.52646979
+122,,,,,,,45,,-122.680205,45.52537318
+123,,,,,,,33,,-122.6801261,45.52743079
+124,,,,,,,29,,-122.6812556,45.52740377
+125,,,,,,,47,,-122.6821936,45.52794737
+126,,,,,,,41,,-122.6821334,45.52519195
+127,,,,,,,46,,-122.6790131,45.52388603
+128,,,,,,,38,,-122.6800346,45.52378054
+129,,,,,,,42,,-122.6800559,45.52397685
+130,,,,,,,51,,-122.6800704,45.52419958
+131,,,,,,,28,,-122.6800971,45.52459858
+132,,,,,,,40,,-122.680506,45.52457051
+133,,,,,,,45,,-122.6821568,45.52546981
+134,,,,,,,45,,-122.6821512,45.52569538
+135,,,,,,,36,,-122.6821206,45.52448752
+136,,,,,,,42,,-122.6821369,45.52471136
+137,,,,,,,27,,-122.6821446,45.52494029
+138,,,,,,,29,,-122.6823628,45.52586987
+139,,,,,,,28,,-122.6826946,45.52586442
+140,,,,,,,50,,-122.6830597,45.52585178
+141,,,,,,,60,,-122.6821988,45.5266316
+142,,,,,,,45,,-122.6822104,45.52693232
+143,,,,,,,51,,-122.682224,45.52716368
+144,,,,,,,27,,-122.6811266,45.52519211
+145,,,,,,,35,,-122.6811394,45.52573533

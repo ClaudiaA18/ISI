@@ -1,0 +1,90 @@
+# TODO 1: Endpoint pentru a adăuga un task nou (POST)
+# Testare:
+# URL: http://127.0.0.1:5000/tasks
+# Metodă: POST
+# Body (JSON):
+# {
+#   "title": "Task 1",
+#   "description": "First task description."
+# }
+# {
+#   "title": "Task 2",
+#   "description": "Second task description."
+# }
+# {
+#   "title": "Task 3",
+#   "description": "Third task description."
+# }
+
+# TODO 2: Endpoint pentru a obține toate task-urile (GET)
+# Testare:
+# URL: http://127.0.0.1:5000/tasks
+# Metodă: GET
+# Verifică dacă răspunsul include toate task-urile adăugate la TODO 1.
+
+# TODO 3: Endpoint pentru a obține un task după id (GET)
+# Testare:
+# URL: http://127.0.0.1:5000/tasks/<task_id>
+# Exemplu: http://127.0.0.1:5000/tasks/1
+# Metodă: GET
+# Verifică dacă răspunsul conține detaliile corecte pentru task-ul cu ID-ul specificat.
+
+# TODO 4: Endpoint pentru a actualiza un task (PUT)
+# Testare:
+# URL: http://127.0.0.1:5000/tasks/<task_id>
+# Exemplu: http://127.0.0.1:5000/tasks/1
+# Metodă: PUT
+# Body (JSON):
+# {
+#   "title": "Updated Task 1",
+#   "description": "Updated description for task 1",
+#   "completed": true
+# }
+# Verifică dacă răspunsul confirmă actualizarea și dacă task-ul apare modificat în lista totală de task-uri.
+
+# TODO 5: Endpoint pentru a șterge un task (DELETE)
+# Testare:
+# URL: http://127.0.0.1:5000/tasks/<task_id>
+# Exemplu: http://127.0.0.1:5000/tasks/1
+# Metodă: DELETE
+# Verifică răspunsul pentru a confirma ștergerea task-ului. Încearcă să accesezi task-ul șters pentru a te asigura că nu mai există.
+
+# TODO 6: Endpoint pentru a marca un task ca finalizat (PATCH)
+# Testare:
+# URL: http://127.0.0.1:5000/tasks/<task_id>/complete
+# Exemplu: http://127.0.0.1:5000/tasks/2/complete
+# Metodă: PATCH
+# Verifică dacă task-ul este acum marcat ca `completed = true` în răspunsul de la GET `/tasks`.
+
+# TODO 7: Validare date la crearea unui task nou
+# (de ex. câmpul title să fie obligatoriu) - implementare în cadrul funcției add_task()
+# Verificare:
+# Testează crearea unui task nou fără câmpul "title" pentru a valida mesajul de eroare.
+# Exemplu:
+# Body (JSON): { "description": "Missing title test." }
+#              {
+#                "status": false,
+#                "message": "Title is required"
+#              }
+
+# Așteptat: Eroare 400 și mesaj de validare corespunzător.
+
+# TODO 8: Adăugare filtrare pentru task-uri finalizate vs nefinalizate (GET cu parametru)
+# Testare:
+# URL: http://127.0.0.1:5000/tasks/filter?completed=true
+# Metodă: GET
+# Verifică dacă lista include doar task-uri marcate ca `completed = true`.
+# Modifică parametrul `completed=false` și verifică dacă sunt returnate doar task-urile nefinalizate.
+
+# TODO 9: Adăugare suport pentru paginare la obținerea task-urilor (GET cu paginare)
+# Testare:
+# URL: http://127.0.0.1:5000/tasks/paginate?page=1&per_page=2
+# Metodă: GET
+# Verifică dacă sunt returnate doar două task-uri pe pagina 1. Testează și alte valori pentru `page` și `per_page`.
+
+# TODO 10: Implementare căutare după titlul sau descrierea task-urilor (GET cu căutare)
+# Testare:
+# URL: http://127.0.0.1:5000/tasks/search?q=Task
+# Metodă: GET
+# Verifică dacă sunt returnate task-urile care conțin termenul "Task" în titlu sau descriere.
+# Testează cu diferite valori pentru `q` și asigură-te că sunt returnate rezultate relevante.
